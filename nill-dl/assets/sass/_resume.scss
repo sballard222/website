@@ -1,0 +1,18 @@
+@import "variables";
+@import "mixin";
+/*-------------------------
+         RESUME
+-------------------------*/
+ul.timeline{
+    list-style-type: none;
+    position: relative;
+    &:before{
+        @include timeline-before;
+    }
+    > li:before{
+        @include time-line-before;
+    }
+}
+.resume h3 i{
+    padding-right: 0.75rem;
+}

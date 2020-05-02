@@ -1,0 +1,102 @@
+@import "variables";
+@import "mixin";
+/*-------------------------
+        FIX
+-------------------------*/
+header {
+  padding: 15px;
+  width: 100%;
+  background-color: transparent;
+  position: fixed;
+  z-index: 1030;
+  top: 0;
+}
+#pp-nav{
+    li{
+        margin: 0.75rem 0.5rem;
+        a{
+            padding: 0.5rem;
+        }
+        span{
+            width: 20px;
+            height: 3px;
+            background-color: $dark-2;
+            border: none;
+            border-radius: 1rem;
+            transition: all 0.5s ease;
+        }
+        .active span{
+            background-color: $base-color;
+            width: 30px;
+            transform: translateX(-10px);
+        }
+        .pp-tooltip{
+            color: $dark;
+            font-size: 10px;
+            font-weight: 500;
+            transition: all 0.5s ease;
+            transform: translateY(-3px);
+        }
+        .active ~ .pp-tooltip{
+          padding-right: 0.75rem;
+        }
+    }
+}
+#pp-nav.right {
+  right: 2.5rem;
+}
+.pp-slidesNav{
+    li{
+        margin: 0.75rem 0.5rem;
+    }
+    span {
+        width: 20px;
+        height: 3px;
+        background-color: #929292;
+        border: none;
+        border-radius: 1rem;
+        transition: all 0.5s ease;
+    }
+    .active span{
+        background-color: #9e6b2b;
+        width: 30px;
+        transform: translateX(-10px);
+    }
+}
+
+.title-small {
+    position: absolute;
+    top: calc(50% - 12px);
+    width: 280px;
+    left: -7rem;
+    z-index: 2;
+    p {
+        font-size: 14px;
+        color: $black;
+        text-transform: uppercase;
+        letter-spacing: 0.17em;
+        text-align: center;
+        transform: rotate(-90deg);
+        position: relative;
+        display: block;
+        font-weight: $f-w-700;
+        &:before {
+            content: '';
+            width: 32px;
+            height: 1px;
+            background: $base-color;
+            position: absolute;
+            left: 28px;
+            top: 12px;
+        }
+        &:after{
+            content: '';
+            width: 32px;
+            height: 1px;
+            background: $base-color;
+            position: absolute;
+            top: 12px;
+            right: 32px;
+        }
+    }
+}

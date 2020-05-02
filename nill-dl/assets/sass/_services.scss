@@ -1,0 +1,22 @@
+@import "variables";
+@import "mixin";
+/*-------------------------
+         Services
+-------------------------*/
+.services{
+    .services-item {
+        background-color: $bg-light;
+        border-radius: $rd-4;
+        padding: 25px 10px;
+        margin-bottom: 30px;
+        &:hover{
+            .services-icon{
+                transform: rotateY(360deg);
+                transition: 0.9s ease;
+            }
+        }
+    }
+    .services-content {
+        padding-left: 3rem;
+    }
+}

@@ -1,0 +1,264 @@
+@import "variables";
+@import "mixin";
+/*-------------------------
+       Nill DARK
+-------------------------*/
+body.nill-dark{
+  background-color: $dark;
+  color: $white;
+}
+.nill-dark {
+    .hero,  .hero-02 .hero-item1 ,   .hero-02 .hero-item2 ,.hero-02 .hero-item3 , .footer{
+        box-shadow: inset 0 0 0 2000px $bg-black;
+    }
+    .hero-03{
+        box-shadow: none;
+    }
+    .hero-04 {
+        .swiper-slide{
+            background-color: $dark;
+        }
+        .swiper-button-next, .swiper-button-prev{
+            background-color: $white;
+            &:after{
+                color: $dark;
+            }
+        }
+    }
+    .text-dark {
+        color: $f4f4f4 !important;
+    }
+    a.text-dark {
+        &:hover {
+            color: $f4f4f4 !important;
+        }
+        &:focus {
+            color: $f4f4f4 !important;
+        }
+    }
+    .comment-info a {
+        color: $f4f4f4 !important;
+        &:hover {
+            color: $base-color !important;
+        }
+    }
+    .form-item .form-control {
+        color: $f4f4f4 !important;
+        border-bottom: 1px solid $eee;
+        background: transparent;
+        &:focus {
+            border-bottom: 1px solid $base-color;
+        }
+    }
+    .text-muted {
+        color: $dbdbdb !important;
+    }
+    .bg-dark, .bg-white {
+        background-color: $dark !important;
+    }
+    .services-item {
+        background-color: $dark-2 !important;
+    }
+    .img-thumbnail {
+        background-color: transparent;
+        border: 1px solid $bg-white;
+    }
+    #pp-nav li span, .pp-slidesNav span {
+        background-color: $eee;
+    }
+    #pp-nav li .active span, .pp-slidesNav .active span{
+        background-color: $base-color;
+    }
+    .pp-tooltip{
+        color: $f4f4f4 !important;
+    }
+    .overlay-menu-toggler{
+        color: $eee !important;
+    }
+    .portfolio-filter li a{
+        color: $dbdbdb !important;
+    }
+    .portfolio .portfolio-item-content {
+        border-color: rgba(27, 30, 33, 0.9);
+        &:hover{
+            background-color: rgba(27, 30, 33, 0.9);
+        }
+    }
+    .portfolio .portfolio-icon a {
+        color: $dark;
+        background-color: $f4f4f4;
+        &:hover{
+            background-color: $base-color;
+            color: $f4f4f4;
+        }
+    }
+    .testimonial .testimonial-item{
+        background-color: $dark-2 !important;
+    }
+    .blog{
+        .blog-content{
+            background-color: $dark-2 !important;
+        }
+        .blog-link:hover{
+            color: #f4f4f4;
+        }
+        .blog-item h5 a:hover {
+            color: $base-color !important;
+        }
+    }
+    .navbar-nav .nav-item a:hover, .navbar a:hover {
+        color: $base-color !important;
+    }
+    .navbar a:hover {
+        color: $base-color !important;
+    }
+    .testimonial .owl-dot span {
+        background-color: $dbdbdb;
+    }
+    .testimonial .owl-dot.active span {
+        background-color: $base-color;
+    }
+    .blog .blog-link button:hover {
+        color: $dbdbdb !important;
+    }
+    .pill-button:hover {
+        color: $f4f4f4;
+    }
+}
+.nill-dark.mono{
+    .base-color{
+        color: $white !important;
+    }
+    .bg-base-color{
+        background-color: $white !important;
+    }
+    .pill-button{
+        background-color: #f0f0f0;
+        border: 2px solid #f0f0f0;
+        color: $dark-2;
+        &:hover{
+            background-color: $white;
+            border-color:  $white;
+        }
+    }
+    #pp-nav{
+        li{
+            .active span{
+                background-color: $white !important;
+            }
+        }
+    }
+    .title-small {
+        p {
+            &:before {
+                background: $white;
+            }
+            &:after{
+                background: $white;
+            }
+        }
+    }
+    .hero{
+        .social-icon{
+            .list-inline-item {
+                i{
+                    &:hover{
+                        color: darken($color: #f4f4f4, $amount: 30%) !important;
+                    }
+                }
+            }
+        }
+    }
+    ul.timeline{
+        > li:before{
+            border: 3px solid $white;
+        }
+    }
+    .skill-box{
+        .skillbar-bar {
+            background: $white;
+        }
+        .skillbar{
+            background-color: $dark-1;
+        }
+    }
+    .portfolio{
+        .portfolio-filter{
+            a.active{
+                background-color: $white !important;
+                color: $dark-2 !important;
+            }
+            a:hover{
+                background-color: $white !important;
+                color: $dark-2 !important;
+            }
+        }
+        .img-overlay{
+            background-color: $bg-black;
+        }
+        .img-overlay-content{
+            a:hover {
+                background-color: darken($color: #f4f4f4, $amount: 30%);
+            }
+        }
+        .portfolio-icon a, .portfolio-icon button{
+            &:hover{
+                background-color: darken($color: #f4f4f4, $amount: 30%);
+            }
+        }
+    }
+    .testimonial{
+        .owl-dot.active span {
+            background-color: darken($color: #f4f4f4, $amount: 30%);
+        }
+        .owl-carousel .testimonial-item img {
+            border: 2px solid lighten($color: #f4f4f4, $amount: 30%);
+        }
+        .owl-nav{
+            .owl-prev span , .owl-next span{
+                background: darken($color: #f4f4f4, $amount: 30%);
+            }
+        }
+    }
+    .blog{
+        .blog-item h5 a:hover {
+            color: $f4f4f4 !important;
+        }
+        .blog-link button{
+            color: $white;
+            &:hover{
+                color: $f4f4f4 !important;
+            }
+        }
+    }
+    .footer{
+        .socails li i{
+            &:hover{
+                color: darken($color: #dddddd, $amount: 30%) !important;
+            }
+        }
+    }
+    .color-scheme i{
+        color: $dark-2;
+    }
+    .right-social ul li a:hover{
+        i{
+            color: $white !important;
+        }
+    }
+}
+@media (max-width: 991px){
+    .nill-dark{
+        .hero-04 {
+            .swiper-slide{
+                background-color: $bg-black !important;
+            }
+        }
+    }
+}
+@media (max-width: 767px){
+    .nill-dark header {
+        background-color: $dark !important;
+        box-shadow: 0 1px 3px 0 $bg-white;
+    } 
+}
