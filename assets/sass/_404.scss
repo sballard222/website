@@ -1,0 +1,75 @@
+@import "variables";
+@import "mixin";
+/*-------------------------
+        404-page
+-------------------------*/
+.page-404 {
+  position: relative;
+}
+.error-404{
+    h1 {
+        font-size: 7rem;
+        font-family: "Arima Madurai", cursive;
+    }
+    .error-content {
+        margin-top: -30px;
+        h2 {
+            font-family: "Arima Madurai", cursive;
+            font-size: 2.5rem;
+        }
+        p {
+            font-family: "Arima Madurai", cursive;
+            font-size: 1rem;
+            text-align: center;
+            margin: 0 auto;
+            max-width: 600px;
+        }
+    }
+}
+
+.right-social {
+  position: fixed;
+  right: 25px;
+  top: 0;
+  width: 50px;
+  bottom: 0;
+  z-index: 5;
+  ul {
+    list-style: none;
+    padding-left: 0;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    position: relative;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin: 0;
+    li {
+        padding: 5px;
+        a {
+            font-size: 1.25rem;
+            padding: 5px;
+            display: block;
+            &:hover i {
+                color: #e24727 !important;
+            }
+          }
+      }
+  }
+}
+
+
+@media (max-width: 767px) {
+  .right-social {
+    position: initial;
+    width: 100%;
+    ul {
+        position: initial;
+        -webkit-transform: none;
+        transform: none;
+        li {
+            display: inline-block;
+            }
+      }
+  }
+}
