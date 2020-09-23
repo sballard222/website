@@ -1,0 +1,109 @@
+@import "variables";
+@import "mixin";
+/*-------------------------
+         PORTFOLIO
+-------------------------*/
+.portfolio{
+    .portfolio-filter{
+        li a{
+            color: $dark;
+            border-radius: $rd-20;
+            display: block;
+            padding: 5px 15px;
+            transition: all 0.3s;
+        }
+        a.active{
+            background-color: $bg-base-color !important;
+            color: $white !important;
+        }
+        a:hover{
+            background-color: $bg-base-color !important;
+            color: $white !important;
+        }
+    }
+    .portfolio-item{
+        img {
+            transition: all .5s ease;
+        }
+    }
+    .portfolio-item-content{
+        position: relative;
+        overflow: hidden;
+        &:hover{
+            img{
+                transform: scale(1.2);
+                border-radius: $rd-r;
+            }
+            .img-overlay{
+                opacity: 1;
+                visibility: visible;
+                border-radius: $rd-r;
+            }
+        }
+        img{
+            width: 100%;
+        }
+    }
+    .img-overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $p-bg;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s ease;
+        border-radius: $rd-p-50;
+        &:before{
+            @include portfolio-before;
+        }
+        &:after{
+            @include portfolio-after;
+        }
+    }
+    .img-overlay-content{
+        position: relative;
+        top: 50%;
+        transform: translate(0, -50%);
+        p{
+            background-color: $dark-1;
+            height: 35px;
+            width: 35px;
+            display: inline-block;
+        }
+        i{
+            line-height: 35px;
+        }
+        a:hover {
+            background-color:$bg-base-color;
+            color: $white;
+        }
+    }
+    .portfolio-icon a, .portfolio-icon button{
+        background-color: $white;
+        color: $bg-black;
+        width: 35px;
+        height: 35px;
+        line-height: 37px;
+        margin: 0 8px;
+        display: inline-block;
+        border-radius: $rd-4;
+        transition: all 0.3s ease;
+        border: none;
+        i{
+            font-size: $f-s-18;
+            font-weight: $f-w-700;
+        }
+        &:hover{
+            background-color: $bg-base-color;
+            color: $white;
+        }
+    }
+}
+.portfolio-single .modal-dialog {
+    max-width: 75%;
+}
+.max-width-450 {
+    max-width: 450px;
+    margin: 0 auto; }

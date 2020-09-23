@@ -1,0 +1,134 @@
+@import "variables";
+@import "mixin";
+/*-------------------------
+       Nill RTL
+-------------------------*/
+.nill-rtl{
+    direction: rtl;
+    text-align: right;
+    .logo{
+        direction: ltr ;
+    }
+    .overlay-menu-toggler {
+        left: 24px;
+        right: inherit;
+    }
+    .socails{
+        padding-right: 0 !important;
+        li:first-child {
+            margin-right: 0 !important;
+        }
+    }
+    .social-icon {
+        padding-right: 0 !important;
+        li:first-child {
+            margin-right: 0 !important;
+        }
+        li:last-child {
+            margin-right: 1rem !important;
+        }
+    }
+    .title-small {
+        right: -7rem;
+        p{
+            transform: rotate(90deg);
+        }
+    }
+    #pp-nav{
+        .active ~ .pp-tooltip{
+            padding-left: 1rem;
+        }
+        .pp-tooltip{
+            padding-left: 0.5rem;
+            transform: translateY(-3px);
+        }
+        li{
+            margin: 0.75rem 0;
+        }
+        li .active span {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+        }
+    }
+    #pp-nav.left{
+        left: 37px;
+    }
+    .about a.pill-button:first-child{
+        margin-left: 1.5rem;
+    }
+    .resume{
+        ul.timeline::before {
+            left: inherit;
+            right: 9px;
+        }
+        ul.timeline > li::before {
+            left: inherit;
+            right: -40px;
+        }
+    } 
+    .skill-box{
+        .skillbar-bar {
+            float: right;
+        }
+        .skillbar-title {
+            left: inherit;
+            right: 3px;
+        }
+        .skill-bar-percent {
+            right: inherit;
+            left: 0;
+        }
+    }
+    .services .services-content {
+        padding-left: inherit;
+        padding-right: 3rem;
+    }
+    .testimonial-item h4{
+        float: right;
+    }
+    .blog-content ul{
+        padding-right: 0 !important;
+    }
+    .modal-header .close {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    ul.checkmark-list{
+        padding-right: 0 !important;
+    }
+    .mfp-counter {
+        direction: ltr;
+    }
+    .contact h6{
+        text-align: right;
+    }
+    .contact-form div , .contact-form h6 , .contact-form p{
+        text-align: right;
+    }
+    .contact #message.toast {
+        left: -20px;
+        button{
+            float: left;
+            padding-right: inherit;
+            padding-left: 1rem !important;
+        }
+    }
+    .color-scheme {
+        right: inherit;
+        left: 31px;
+        i {
+            transform: rotateY(180deg);
+            display: inline-block;
+        }
+    }
+    .error-404 h1{
+        direction: ltr !important;
+    }
+    .right-social {
+        right: initial;
+        left: 25px;
+        .social-icon li:last-child {
+            margin-right: 0 !important;
+        }
+    }
+}

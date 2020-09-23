@@ -1,0 +1,55 @@
+@import "variables";
+
+// timeline-before mixin
+@mixin timeline-before {
+  content: ' ';
+  background: $dark-1;
+  display: inline-block;
+  position: absolute;
+  left: 9px;
+  top: 30px;
+  width: 2px;
+  height: 100%;
+  z-index: 400;
+}
+
+// time-line-before mixin
+@mixin time-line-before {
+  content: ' ';
+  background-color: $white;
+  display: inline-block;
+  border-radius: $rd-p-50;
+  border: 3px solid $base-color;
+  left: -40px;
+  width: 20px;
+  height: 20px;
+  z-index: 400;
+  top: 29px;
+  position: relative;
+}
+
+// portfolio-before mixin
+@mixin portfolio-before {
+  content: "";
+  height: 45%;
+  width: 40%;
+  position: absolute;
+  border-top: 1px solid $white;
+  border-left: 1px solid $white;
+  top: 18px;
+  left: 18px;
+}
+// portfolio-after mixin
+@mixin portfolio-after {
+  content: "";
+  height: 45%;
+  width: 40%;
+  position: absolute;
+  border-bottom: 1px solid $white;
+  border-right: 1px solid $white;
+  bottom: 18px;
+  right: 18px;
+}
+
+
+

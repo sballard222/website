@@ -1,0 +1,45 @@
+@import "variables";
+@import "mixin";
+/*-------------------------
+          HERO
+-------------------------*/
+.hero-02{
+    .hero-content {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        z-index: 2;
+        right: 0;
+        p {
+            max-width: 500px; 
+        } 
+    }
+    #hero-slider{
+        opacity: 0.6;
+    }
+    .hero-item1 {
+        background: url("http://placehold.it/1920x1280") no-repeat center;
+    }
+    .hero-item2 {
+        background: url("http://placehold.it/1920x1280") no-repeat center;
+    }
+    .hero-item3 {
+        background: url("http://placehold.it/1920x1280") no-repeat center;
+    }
+    .hero-slide{
+        background-size: 100%;
+    }
+    .hero-slide.zoom{
+        background-size: 200%;
+        transition: background-size 20s ease;
+    }
+    .hero-icon {
+        text-align: center;
+        position: absolute;
+        bottom: 40px;
+        z-index: 1;
+        left: calc(50% - 8px);
+        animation: bounce 2s infinite;
+    }
+}

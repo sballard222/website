@@ -1,0 +1,11 @@
+@import "variables";
+@import "mixin";
+/*-------------------------
+         Count up
+-------------------------*/
+.count-number{
+  font-size: $f-s-r;
+}
+.count-content{
+  margin: 10px 0;
+}

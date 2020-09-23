@@ -1,0 +1,126 @@
+@import "variables";
+@import "mixin";
+/*-------------------------
+    MONO
+-------------------------*/
+.mono{
+    .base-color{
+        color: $dark-2 !important;
+    }
+    .bg-base-color{
+        background-color: $dark-2 !important;
+    }
+    .pill-button{
+        background-color: $dark-2;
+        border: 2px solid $dark-2;
+        &:hover{
+            background-color: darken($color: #2a2a2a, $amount: 30%);
+            border-color:  darken($color: #2a2a2a, $amount: 30%);;
+        }
+    }
+    .loader {
+        color: $bg-white;
+    }
+    #pp-nav{
+        li{
+            .active span{
+                background-color: $dark-2;
+            }
+        }
+    }
+    .title-small {
+        p {
+            &:before {
+                background: $dark-2;
+            }
+            &:after{
+                background: $dark-2;
+            }
+        }
+    }
+    .overlay-menu{
+        a:hover{
+            color: $white !important;
+        }
+        a.active{
+            color: $white !important;
+        }
+    }
+    .hero{
+        .social-icon{
+            .list-inline-item {
+                i{
+                    &:hover{
+                        color: darken($color: #2a2a2a, $amount: 30%) !important;
+                    }
+                }
+            }
+        }
+    }
+    ul.timeline{
+        > li:before{
+            border: 3px solid $dark-2;
+        }
+    }
+    .skill-box{
+        .skillbar-bar {
+            background: $dark-2;
+        }
+    }
+    .portfolio{
+        .portfolio-filter{
+            a.active{
+                background-color: darken($color: #2a2a2a, $amount: 30%) !important;
+            }
+            a:hover{
+                background-color: darken($color: #2a2a2a, $amount: 30%) !important;
+            }
+        }
+        .img-overlay{
+            background-color: $bg-black;
+        }
+        .img-overlay-content{
+            a:hover {
+                background-color: darken($color: #2a2a2a, $amount: 30%);
+            }
+        }
+        .portfolio-icon a, .portfolio-icon button{
+            &:hover{
+                background-color: darken($color: #2a2a2a, $amount: 30%);
+            }
+        }
+    }
+    .testimonial{
+        .owl-dot.active span {
+            background-color: darken($color: #2a2a2a, $amount: 30%);
+        }
+        .owl-carousel .testimonial-item img {
+            border: 2px solid lighten($color: #2a2a2a, $amount: 30%);
+        }
+        .owl-nav{
+            .owl-prev span , .owl-next span{
+                background: darken($color: #2a2a2a, $amount: 30%);
+            }
+        }
+    }
+    .blog{
+        .blog-link button{
+            color: $dark-2;
+            &:hover{
+                color: darken($color: #2a2a2a, $amount: 30%) !important;
+            }
+        }
+    }
+    .footer{
+        .socails li i{
+            &:hover{
+                color: darken($color: #2a2a2a, $amount: 30%) !important;
+            }
+        }
+    }
+    .right-social ul li a{
+        &:hover i{
+            color: darken($color: #2a2a2a, $amount: 30%) !important;
+        } 
+    }
+}
