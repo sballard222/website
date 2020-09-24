@@ -6,7 +6,7 @@ if ($_POST) {
     $email = "";
     //$subject = "";
     $comments = "";
-    $recipient="air.sea.sam@gmail.com"; // Your email comes here
+    $recipient="sballard222@gmail.com"; // Your email comes here
 
     if (isset($_POST['name'])) {
         $name = $_POST['name'];
